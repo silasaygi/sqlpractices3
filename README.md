@@ -1,6 +1,6 @@
 # Kategori Bazlı Satılan Ürünlerin Ortalama Fiyat Analizi
 
-** " Görüntülediğiniz SQL senaryosu, BTK Akademi adresinde bulunan "Uygulamalarla SQL Öğreniyorum" eğitiminden pratik yapma amacıyla alınmıştır. Eğitimde kullanılan veri tabanını, eğitimin dökümantasyon kısmından görüntüleyebilirsiniz. " **
+" Görüntülediğiniz SQL senaryosu, BTK Akademi adresinde bulunan "Uygulamalarla SQL Öğreniyorum" eğitiminden pratik yapma amacıyla alınmıştır. Eğitimde kullanılan veri tabanını, eğitimin dökümantasyon kısmından görüntüleyebilirsiniz. " 
 
 Bu proje, bir e-ticaret platformunda farklı kategorilerde satılan ürünlerin ortalama fiyatlarını analiz etmek için SQL sorguları kullanılarak hazırlanmıştır.
 
