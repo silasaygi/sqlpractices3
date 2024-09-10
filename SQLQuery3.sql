@@ -1,9 +1,9 @@
---HER BİR KATEGORİDE SATILAN ORTALAMA ÜRÜN FİYATI
+--HER BÃR KATEGORÃDE SATILAN ORTALAMA ÃœRÃœN FÃYATI
 SELECT
 ITM.CATEGORY1,
-SUM(OD.LINETOTAL) AS TOPLAMSIPARIS_TUTARI, --ORDERS tablosunda verilen siparişler şehirler için syrı ayrı listelenmiş durumdaydı. Örneğin 'X' şehrinde verilen siparişler 'Y' adet iste bu 'Y' satır kadar görüntüleniyordu. Amacımız doğrultusunda bu satırları topladık.-- 
+SUM(OD.LINETOTAL) AS TOPLAMSIPARIS_TUTARI, --ORDERS tablosunda verilen siparisler sehirler iÃ§in ayri ayri listelenmis durumdaydi. Ã–rnegin 'X' sehrinde verilen siparisler 'Y' adet iste bu 'Y' satir kadar gÃ¶rÃ¼ntÃ¼leniyordu. Amacimiz dogrultusunda bu satirlari topladik.-- 
 SUM(OD.AMOUNT) AS TOPLAMSIPARIS_ADEDI, 
-COUNT(OD.ID) AS TOPLAMSIPARIS_SAYISI, --Burada satır saydıracağımız için 'COUNT' kullandık.
+COUNT(OD.ID) AS TOPLAMSIPARIS_SAYISI, --Burada satir saydiracagimiz iÃ§in 'COUNT' kullandik.
 SUM(OD.LINETOTAL)/SUM(OD.AMOUNT) AS ORTALAMABIRIMFIYAT
 
 FROM ORDERS O
@@ -17,7 +17,7 @@ INNER JOIN INVOICES I ON I.ORDERID=O.ID
 INNER JOIN ORDERDETAILS OD ON OD.ORDERID=O.ID
 INNER JOIN ITEMS ITM ON ITM.ID=OD.ITEMID
 
-WHERE ITM.CATEGORY1= 'KOZMETIK' -- BURADA KATEGORİ1'DE bulunan kategorilerden birini yazarak sipariş dağılımı istediğimiz gibi inceleyebiliriz.
---WHERE ŞARTINI KALDIRDIĞIMIZDA 'CATEGORY1'de bulunan tüm kategoriler için 'ORTALAMA BİRİM FİYATI' görüntüleyebiliriz.
-GROUP BY ITM.CATEGORY1--(aggregate fonksiyonları için 'groupby' kullandık)
+WHERE ITM.CATEGORY1= 'KOZMETIK' -- BURADA CATEGORY1'DE bulunan kategorilerden birini yazarak siparis dagilimini istediÃ°imiz gibi inceleyebiliriz.
+--WHERE SARTINI KALDIRDIGIMIZDA 'CATEGORY1'de bulunan tÃ¼m kategoriler iÃ§in 'ORTALAMA BIRIM FIYATI' gÃ¶rÃ¼ntÃ¼leyebiliriz.
+GROUP BY ITM.CATEGORY1--(aggregate fonksiyonlari iÃ§in 'groupby' kullandik)
 ORDER BY 1 DESC
