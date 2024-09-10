@@ -43,6 +43,8 @@ Our aim is to calculate the average unit prices for each product category and an
 - ORDERDETAILS: Contains detailed information about ordered products.
 - ITEMS: Contains the category and other basic information of the products sold.
 
+  Queries : 
+
 - ITM.CATEGORY1: The category to which the products belong.
 - SUM(OD.LINETOTAL): Calculates the total order amount of the products sold in the relevant category.
 - SUM(OD.AMOUNT): Gives the total order quantity (number of products sold).
