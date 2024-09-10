@@ -1,6 +1,6 @@
 # Kategori Bazlı Satılan Ürünlerin Ortalama Fiyat Analizi
 
-" Görüntülediğiniz SQL senaryosu, BTK Akademi adresinde bulunan "Uygulamalarla SQL Öğreniyorum" eğitiminden pratik yapma amacıyla alınmıştır. Eğitimde kullanılan veri tabanını, eğitimin dökümantasyon kısmından görüntüleyebilirsiniz. "
+**_ " Görüntülediğiniz SQL senaryosu, BTK Akademi adresinde bulunan "Uygulamalarla SQL Öğreniyorum" eğitiminden pratik yapma amacıyla alınmıştır. Eğitimde kullanılan veri tabanını, eğitimin dökümantasyon kısmından görüntüleyebilirsiniz. " _**
 
 Bu proje, bir e-ticaret platformunda farklı kategorilerde satılan ürünlerin ortalama fiyatlarını analiz etmek için SQL sorguları kullanılarak hazırlanmıştır.
 
@@ -14,6 +14,8 @@ Amacımız, her bir ürün kategorisi için ortalama birim fiyatlarını hesapla
 - ORDERDETAILS: Sipariş edilen ürünlere dair detay bilgileri içerir.
 - ITEMS: Satılan ürünlerin kategori ve diğer temel bilgilerini içerir.
 
+
+Sorgular : 
 
 - ITM.CATEGORY1: Ürünlerin ait olduğu kategori.
 - SUM(OD.LINETOTAL): İlgili kategoride satılan ürünlerin toplam sipariş tutarını hesaplar.
